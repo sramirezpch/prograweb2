@@ -1,0 +1,19 @@
+<section id="cards" class="padded">
+    <div class="container">
+      <h2>Estadios</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+
+        <div class="col" *ngFor="let itemCard of listaCards">
+          <div class="card">
+            <img src="{{itemCard.imagen}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{itemCard.nombre}}</h5>
+              <p class="card-text">{{itemCard.ciudad}} {{itemCard.capacidad}}</p>
+            </div>
+          </div>
+        </div>
+
+
+       </div> 
+    </div>
+  </section>
