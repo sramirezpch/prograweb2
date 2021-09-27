@@ -3,15 +3,25 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+import { NavbarComponent } from './common/navbar/navbar.component';
+import { FooterComponent } from './common/footer/footer.component';
 import { CardsComponent } from './home/cards/cards.component';
-import { FooterComponent } from './commom/footer/footer.component';
+import { InicioComponent } from './components/inicio/inicio.component';
+import { MainContentComponent } from './home/main-content/main-content.component';
+import { BannerComponent } from './home/banner/banner.component';
 import { AppRoutingModule } from './app-routing.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
+
+    NavbarComponent,
+    FooterComponent,
+    InicioComponent,
+    MainContentComponent,
+    BannerComponent,
     CardsComponent,
-    FooterComponent
 
   ],
   imports: [

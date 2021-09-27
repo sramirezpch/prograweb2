@@ -1,0 +1,16 @@
+.sports-button {
+  padding: 8px 20px;
+  border-radius: 5px;
+  background: #fff;
+}
+.sports-button:hover {
+  background: #4611a7;
+  color: #fff;
+  transition-timing-function: ease-in;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.sports-active {
+  background: #4611a7;
+  color: #fff;
+}
