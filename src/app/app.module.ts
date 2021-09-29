@@ -1,7 +1,9 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { TablaEquiposComponent } from './components/tabla-equipos/tabla-equipos.component';
 
 import { NavbarComponent } from './common/navbar/navbar.component';
 import { FooterComponent } from './common/footer/footer.component';
@@ -25,10 +27,12 @@ import { CampeonesComponent } from './components/campeones/campeones.component';
     CardsComponent,
     BlogComponent,
     CampeonesComponent,
+    TablaEquiposComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
