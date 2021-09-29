@@ -11,7 +11,7 @@ import { MainContentComponent } from './home/main-content/main-content.component
 import { BannerComponent } from './home/banner/banner.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BlogComponent } from './common/blog/blog.component';
-
+import { CampeonesComponent } from './components/campeones/campeones.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,8 @@ import { BlogComponent } from './common/blog/blog.component';
     MainContentComponent,
     BannerComponent,
     CardsComponent,
-    BlogComponent
+    BlogComponent,
+    CampeonesComponent,
   ],
   imports: [
     BrowserModule,
