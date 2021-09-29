@@ -11,6 +11,10 @@ footer .widget ul {
     list-style: none;
 }
 
+.imagen-footer {
+    margin-bottom: 20px;
+}
+
 footer a {
     color: #b7b3cb;
 }
@@ -32,18 +36,29 @@ h5{
     padding: 5px 5px 5px 15px;
     width: 50%;
     position: relative;
-}
-
-.input-group {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-}
+}  
 
 .form-control {
     position: relative;
-    flex: 1 1 auto;
-    width: 1%;
-    margin-bottom: 0;
+    width: 50px;
+    margin-right: 150px;
+}
+
+.site-button {
+   margin-right: 20px; 
+}
+
+.footer-final {
+    background-color: #15141a;
+    padding: 25px 0;
+    color: #b0b0b0;
+    border-top: 1px solid hsla(0,0%,100%,.05) ;
+}
+
+ul li {
+    color: #b7b3cb;
+}
+
+p {
+    color: #b7b3cb;
 }

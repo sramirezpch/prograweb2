@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { CardsComponent } from './home/cards/cards.component';
 import { FooterComponent } from './commom/footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
+import { BlogComponent } from './commom/blog/blog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardsComponent,
-    FooterComponent
+    FooterComponent,
+    BlogComponent
 
   ],
   imports: [
