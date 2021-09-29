@@ -31,14 +31,13 @@
           </tbody>
         </table>
       </div>
-
       <div class="col-md-4">
         <div class="col-md-4" *ngIf="campeonElegido">
           <img src={{campeonElegido.foto}} alt="" class="img-fluid">
           <h4>{{campeonElegido.deporte}}</h4>
           <p>{{campeonElegido.nombre}}<br>{{campeonElegido.edad}}<br>{{campeonElegido.pais}}</p>
         </div>
-        <p>{{campeonElegido.apellido}}<br>{{campeonElegido.edad}}<br>{{campeonElegido.pais}}</p>
+        <p *ngIf="campeonElegido">{{campeonElegido.apellido}}<br>{{campeonElegido.edad}}<br>{{campeonElegido.pais}}</p>
       </div>
     </div>
   </div>

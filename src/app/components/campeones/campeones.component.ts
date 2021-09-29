@@ -8,17 +8,19 @@ import { CAMPEONES } from 'src/app/entities/campeones';
   styleUrls: ['./campeones.component.css']
 })
 export class CampeonesComponent implements OnInit {
-  listaCampeones = CAMPEONES
+  listaCampeones = CAMPEONES;
   campeonElegido: Campeon | undefined;
-/*
-  aleatorio = Math.floor(Math.random()*this.listaCampeones.length)
-  campeonGanador: Campeon = this.listaCampeones[this.aleatorio];
-*/
-  constructor() { }
+  /*
+    aleatorio = Math.floor(Math.random()*this.listaCampeones.length)
+    campeonGanador: Campeon = this.listaCampeones[this.aleatorio];
+  */
+  constructor() {
+    console.log(this.listaCampeones);
+  }
 
   ngOnInit(): void {
   }
-  seleccionar(campeonSeleccionado: Campeon){
+  seleccionar(campeonSeleccionado: Campeon) {
     console.log(campeonSeleccionado);
     this.campeonElegido = campeonSeleccionado;
   }
