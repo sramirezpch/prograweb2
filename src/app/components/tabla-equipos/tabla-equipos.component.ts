@@ -11,14 +11,12 @@ export class TablaEquiposComponent implements OnInit {
 
   listaEquipos: Equipos[] | undefined;
 
-  constructor(private equiposService : InformacionEquiposService) { }
+  constructor(private equiposService: InformacionEquiposService) { }
 
   ngOnInit(): void {
-    this.equiposService.mostrarEquipos().subscribe(
-      (res : Equipos[]) => {
-        this.listaEquipos = res;
-      }
-    );
+    this.equiposService.mostrarEquipos().subscribe(value => {
+      this.listaEquipos = value.teams;
+    })
   }
 
 }

@@ -1,31 +1,33 @@
 <section class="container" id="table_equipos">
-    <div>
-      <h2>Información de Equipos</h2>
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Logo</th>
-            <th>Nombre</th>
-            <th>Prefijo</th>
-            <th>Fundación</th>
-            <th>Liga</th>
-            <th>Estadio</th>
-            <th>Capacidad</th>
-            <th>País</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor = "let itemEquipos of listaEquipos">
-            <td>{{itemEquipos.strTeamLogo}}</td>
-            <td>{{itemEquipos.strTeam}}</td>
-            <td>{{itemEquipos.strTeamShort}}</td>
-            <td>{{itemEquipos.intFormedYear}}</td>
-            <td>{{itemEquipos.strLeague}}</td>
-            <td>{{itemEquipos.strStadium}}</td>
-            <td>{{itemEquipos.intStadiumCapacity}}</td>
-            <td>{{itemEquipos.strCountry}}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
+  <div>
+    <h2>Información de Equipos</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Logo</th>
+          <th>Nombre</th>
+          <th>Prefijo</th>
+          <th>Fundación</th>
+          <th>Liga</th>
+          <th>Estadio</th>
+          <th>Capacidad</th>
+          <th>País</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let itemEquipos of listaEquipos">
+          <td>
+            <img src={{itemEquipos.strTeamLogo}} style="width: 100px" />
+          </td>
+          <td>{{itemEquipos.strTeam}}</td>
+          <td>{{itemEquipos.strTeamShort}}</td>
+          <td>{{itemEquipos.intFormedYear}}</td>
+          <td>{{itemEquipos.strLeague}}</td>
+          <td>{{itemEquipos.strStadium}}</td>
+          <td>{{itemEquipos.intStadiumCapacity}}</td>
+          <td>{{itemEquipos.strCountry}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

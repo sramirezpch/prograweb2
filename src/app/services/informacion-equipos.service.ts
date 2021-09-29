@@ -7,10 +7,10 @@ import { Equipos } from '../entities/equipos';
 })
 export class InformacionEquiposService {
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  mostrarEquipos(){
-    const ruta ="https://www.thesportsdb.com/api/v1/json/1/lookup_all_teams.php?id=4328";
-    return this.http.get<Equipos[]>(ruta);
+  mostrarEquipos() {
+    const ruta = "https://www.thesportsdb.com/api/v1/json/1/lookup_all_teams.php?id=4328";
+    return this.http.get<any>(ruta);
   }
 }
