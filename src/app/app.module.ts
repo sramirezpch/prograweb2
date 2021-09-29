@@ -10,6 +10,7 @@ import { InicioComponent } from './components/inicio/inicio.component';
 import { MainContentComponent } from './home/main-content/main-content.component';
 import { BannerComponent } from './home/banner/banner.component';
 import { AppRoutingModule } from './app-routing.module';
+import { BlogComponent } from './common/blog/blog.component';
 
 
 @NgModule({
@@ -22,7 +23,7 @@ import { AppRoutingModule } from './app-routing.module';
     MainContentComponent,
     BannerComponent,
     CardsComponent,
-
+    BlogComponent
   ],
   imports: [
     BrowserModule,
