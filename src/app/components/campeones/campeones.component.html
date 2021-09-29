@@ -1,25 +1,32 @@
 <section id="campeones" class="padded">
   <div class="container">
-    <h2>Campeones</h2>
+    <h2>Campeones Tokyo 2020-2021</h2>
     <div class="row">
       <div class="col-md-8">
         <table class="table">
            <thead>
              <tr>
-                <th>Deporte</th>
-                <th>Nombre</th>
-                <th>Edad</th>
-                <th>País</th>
+              <th>Cod</th>
+              <th>Deporte</th>
+              <th>Apellido</th>
+              <th>Nombre</th>
+              <th>Sexo</th>
+              <th>Edad</th>
+              <th>Evento</th>
+              <th>País</th>
              </tr>
            </thead>
              <tbody>
               <tr *ngFor="let itemCampeon of listaCampeones" 
               (click)="seleccionar(itemCampeon)" 
-              [class.table-primary]="itemCampeon === CampeonElegido">
+              [class.table-primary]="itemCampeon === campeonElegido">
                 <td>{{itemCampeon.id}}</td>
                 <td>{{itemCampeon.deporte}}</td>
+                <td>{{itemCampeon.apellido}}</td>
                 <td>{{itemCampeon.nombre}}</td>
+                <td>{{itemCampeon.sexo}}</td>         
                 <td>{{itemCampeon.edad}}</td>
+                <td>{{itemCampeon.evento}}</td>
                 <td>{{itemCampeon.pais}}</td>
               </tr>
              </tbody>
@@ -33,7 +40,7 @@
         <div class="col-md-4" *ngIf="campeonElegido">
           <img src={{campeonElegido.foto}} alt="" class="img-fluid">
           <h4>{{campeonElegido.deporte}}</h4>
-          <p>{{campeonElegido.nombre}}<br>{{campeonElegido.edad}}<br>{{campeonElegido.pais}}</p>
+          <p>{{campeonElegido.apellido}}<br>{{campeonElegido.edad}}<br>{{campeonElegido.pais}}</p>
        </div>      
       </div>
     </div>
