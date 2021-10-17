@@ -1,12 +1,11 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Deportes } from '../entities/deportes';
+import { Deporte } from '../entities/deporte';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CategoriasDeportesService {
-  deportes: Deportes[];
   constructor(private readonly http: HttpClient) { }
 
   mostrarDeportes(): any {

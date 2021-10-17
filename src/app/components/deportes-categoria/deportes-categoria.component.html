@@ -1,0 +1,26 @@
+<section class="container pt-5">
+    <div class="row pt-5">
+        <div class="col-8">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Deporte</th>
+                        <th>Campeon</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let deporte of deportes" (click)="seleccionarDeporte(deporte)">
+                        <td>{{deporte.nombre}}</td>
+                        <td>{{deporte.campeon}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-4">
+            <div *ngIf="currentSport" class="d-flex flex-column">
+                <span>{{currentSport.nombre}}</span>
+                <span>{{currentSport.campeon}}</span>
+            </div>
+        </div>
+    </div>
+</section>>

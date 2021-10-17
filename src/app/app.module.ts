@@ -14,6 +14,7 @@ import { BannerComponent } from './components/banner/banner.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BlogComponent } from './common/blog/blog.component';
 import { CampeonesComponent } from './components/campeones/campeones.component';
+import { DeportesCategoriaComponent } from './components/deportes-categoria/deportes-categoria.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CampeonesComponent } from './components/campeones/campeones.component';
     CardsComponent,
     BlogComponent,
     CampeonesComponent,
-    TablaEquiposComponent
+    TablaEquiposComponent,
+    DeportesCategoriaComponent
   ],
   imports: [
     BrowserModule,
