@@ -15,6 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BlogComponent } from './common/blog/blog.component';
 import { CampeonesComponent } from './components/campeones/campeones.component';
 import { DeportesCategoriaComponent } from './components/deportes-categoria/deportes-categoria.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,9 @@ import { DeportesCategoriaComponent } from './components/deportes-categoria/depo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

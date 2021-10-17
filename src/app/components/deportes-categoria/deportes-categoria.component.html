@@ -1,26 +1,71 @@
-<section class="container pt-5">
-    <div class="row pt-5">
-        <div class="col-8">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Deporte</th>
-                        <th>Campeon</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr *ngFor="let deporte of deportes" (click)="seleccionarDeporte(deporte)">
-                        <td>{{deporte.nombre}}</td>
-                        <td>{{deporte.campeon}}</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="col-4">
-            <div *ngIf="currentSport" class="d-flex flex-column">
-                <span>{{currentSport.nombre}}</span>
-                <span>{{currentSport.campeon}}</span>
+<section id="tabla-categorias" class="padded">
+    <div class="container">
+        <h2>Tabla Categorías</h2>
+
+        <p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">
+                Nueva categoría
+            </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+
+                <form ngNativeValidate [formGroup]="categoriasAgregarForm"
+                    (ngSubmit)="agregarCategoria(categoriasAgregarForm.value)">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Pais" formControlName="pais" required
+                            minlength="2">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Nombre" formControlName="nombre" required
+                            minlength="2">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Deporte" formControlName="deporte" required
+                            minlength="3">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Evento" formControlName="evento" required
+                            minlength="5">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Medallas" formControlName="medallas"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <button class="btn btn-primary" type="submit" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample">Guardar</button>
+                        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample">Cancelar</button>
+                    </div>
+                </form>
+
             </div>
         </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="text-center">Cod</th>
+                    <th>Pais</th>
+                    <th>Nombre</th>
+                    <th>Deporte</th>
+                    <th>Evento</th>
+                    <th>Medallas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let itemCategoria of listaCategorias">
+                    <td class="text-center">{{itemCategoria.IdDeportista}}</td>
+                    <td>{{itemCategoria.Pais}}</td>
+                    <td>{{itemCategoria.Nombre}}</td>
+                    <td>{{itemCategoria.Deporte}}</td>
+                    <td>{{itemCategoria.Evento}}</td>
+                    <td>{{itemCategoria.Medallas}}</td>
+                </tr>
+            </tbody>
+        </table>
+
     </div>
-</section>>
+</section>

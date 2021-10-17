@@ -1,4 +1,8 @@
 export class Deporte {
-    nombre: string;
-    campeon: string
+    IdDeportista: string;
+    Pais: string;
+    Nombre: string;
+    Deporte: string;
+    Evento: string;
+    Medallas: string;
 }
