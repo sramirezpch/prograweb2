@@ -16,6 +16,7 @@ import { BlogComponent } from './common/blog/blog.component';
 import { CampeonesComponent } from './components/campeones/campeones.component';
 import { DeportesCategoriaComponent } from './components/deportes-categoria/deportes-categoria.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MaestroDetalleComponent } from './components/maestro-detalle/maestro-detalle.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BlogComponent,
     CampeonesComponent,
     TablaEquiposComponent,
-    DeportesCategoriaComponent
+    DeportesCategoriaComponent,
+    MaestroDetalleComponent
   ],
   imports: [
     BrowserModule,

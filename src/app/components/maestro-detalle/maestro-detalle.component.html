@@ -1,0 +1,43 @@
+<section id="campeones" class="padded">
+    <div class="container">
+        <h2>Tabla Maestro Detalle</h2>
+        <div class="row justify-content-between">
+            <div class="col-md-3">
+                <table class="table">
+                    <thead *ngFor='let deporte of deportes'>
+                        <tr class="d-flex flex-column py-2" (click)="selectSport(deporte)">
+                            <span class="p-0" style="font-size: 28px">{{deporte.nombre}}</span>
+                            <span class="p-0" style="font-size: 14px;">{{deporte.descripcion}}</span>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-8">
+                <div class="row" *ngIf="champions">
+                    <table>
+                        <thead>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Edad</th>
+                            <th>Sexo</th>
+                            <th>Evento</th>
+                            <th>Pais</th>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let champion of champions">
+                                <td>{{champion.name}}</td>
+                                <td>{{champion.lastname}}</td>
+                                <td>{{champion.age}}</td>
+                                <td>{{champion.sex}}</td>
+                                <td>{{champion.event}}</td>
+                                <td>{{champion.country}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

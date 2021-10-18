@@ -1,16 +1,15 @@
 <section id="tabla-categorias" class="padded">
     <div class="container">
-        <h2>Tabla Categorías</h2>
+        <h2>Tabla de campeones</h2>
 
         <p>
             <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
                 aria-expanded="false" aria-controls="collapseExample">
-                Nueva categoría
+                Nuevo campeón
             </button>
         </p>
         <div class="collapse" id="collapseExample">
             <div class="card card-body">
-
                 <form ngNativeValidate [formGroup]="categoriasAgregarForm"
                     (ngSubmit)="agregarCategoria(categoriasAgregarForm.value)">
                     <div class="mb-3">
