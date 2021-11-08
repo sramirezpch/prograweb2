@@ -12,7 +12,7 @@ export class MaestrodetalleService {
   constructor(private readonly http: HttpClient) { }
 
   getSports(): Observable<Deporte2[]> {
-    return this.http.get<Deporte2[]>('https://deportistas-isil.herokuapp.com/api/sports')
+    return this.http.get<Deporte2[]>('https://unfair-spiral.000webhostapp.com/webDeportes/deportistas.php')
   }
 
   // getChampions(sportId: string): Observable<Campeon2[]> {

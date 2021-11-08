@@ -27,12 +27,12 @@
                         </thead>
                         <tbody>
                             <tr *ngFor="let champion of champions">
-                                <td>{{champion.name}}</td>
-                                <td>{{champion.lastname}}</td>
-                                <td>{{champion.age}}</td>
-                                <td>{{champion.sex}}</td>
-                                <td>{{champion.event}}</td>
-                                <td>{{champion.country}}</td>
+                                <td>{{champion.nombre}}</td>
+                                <td>{{champion.apellido}}</td>
+                                <td>{{champion.edad}}</td>
+                                <td>{{champion.sexo === 'M' ? 'Masculino' : 'Femenino'}}</td>
+                                <td>{{champion.evento}}</td>
+                                <td>{{champion.pais}}</td>
                             </tr>
                         </tbody>
                     </table>
